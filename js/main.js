@@ -1,31 +1,25 @@
-var lista = ["maçã", "pera", "laranja"];
+/*
+var idade = prompt("Qual sua idade?");
 
-lista.push("uva");
-console.log(lista);
+if (idade >= 18) {
+    alert('Maior de idade!')
+} else {
+    alert('Menor de idade')
+};
+*/
 
-lista.pop();
-console.log(lista);
+var d = new Date();
+alert(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
 
-console.log(lista.length);
+var count = 0;
 
-console.log(lista.reverse());
-console.log(lista.toString());
-console.log(lista.join(", "));
+while (count < 5) {
+    console.log(count);
+    count += 1;
+};
 
-var fruta = {
-    nome: "maçã",
-    cor: "vermelha"
-}
+console.log("\n");
 
-// alert(fruta.nome);
-
-var fruta_lista = [{
-    nome: "maçã",
-    cor: "vermelha"
-}, {
-    nome: "uva",
-    cor: "roxa"
-}]
-
-console.log(fruta_lista);
-alert(fruta_lista[1].nome);
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+};
