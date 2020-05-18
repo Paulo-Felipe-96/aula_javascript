@@ -1,25 +1,12 @@
-/*
-var idade = prompt("Qual sua idade?");
+function soma(n1, n2){
+    return n1 + n2;
+}
 
-if (idade >= 18) {
-    alert('Maior de idade!')
-} else {
-    alert('Menor de idade')
-};
-*/
+console.log(soma(10, 20));
 
-var d = new Date();
-alert(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
-
-var count = 0;
-
-while (count < 5) {
-    console.log(count);
-    count += 1;
+function validaIdade(idade){
+    return idade >= 18 ? true:false
 };
 
-console.log("\n");
-
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-};
+var idade = prompt("Sua idade: ");
+console.log(validaIdade(idade));
