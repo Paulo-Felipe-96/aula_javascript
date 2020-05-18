@@ -1,10 +1,31 @@
-var nome = "Paulo Martins";
-var idade = 23;
-var idade2 = 10;
-var frase = "Brasil já teve uma boa seleção";
+var lista = ["maçã", "pera", "laranja"];
 
-// alert(`${nome} tem ${idade} anos.`);
-// alert(`${idade + idade2}`)
-console.log(frase.replace("Brasil", "Brazucas"));
-console.log(frase.toUpperCase());
-console.log(frase.toLowerCase());
+lista.push("uva");
+console.log(lista);
+
+lista.pop();
+console.log(lista);
+
+console.log(lista.length);
+
+console.log(lista.reverse());
+console.log(lista.toString());
+console.log(lista.join(", "));
+
+var fruta = {
+    nome: "maçã",
+    cor: "vermelha"
+}
+
+// alert(fruta.nome);
+
+var fruta_lista = [{
+    nome: "maçã",
+    cor: "vermelha"
+}, {
+    nome: "uva",
+    cor: "roxa"
+}]
+
+console.log(fruta_lista);
+alert(fruta_lista[1].nome);
